@@ -1,0 +1,10 @@
+import random
+import time
+
+password = random.randint(100000,999999)
+print(password)
+
+
+time.sleep(2)
+for x in range(1,password):
+    print(x)
