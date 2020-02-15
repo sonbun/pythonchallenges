@@ -1,0 +1,8 @@
+from turtle import *
+pensize(5)
+def drawShape(n):
+    for x in range(n):
+        fd(50)
+        print((n-2)*180/n)
+        rt(180-((n-2)*180/n))
+drawShape(8)
