@@ -1,0 +1,6 @@
+from turtle import *
+b = input("Text: ")
+a = [char for char in b]
+write(b,font=("Arial",20))
+ht()
+fd(len(a)*14)
