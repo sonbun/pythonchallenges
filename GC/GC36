@@ -1,0 +1,15 @@
+import random
+score = 0
+n = int(input("How many questions?: "))
+for x in range(n):
+    a = random.randint(1,12)
+    b = random.randint(1,12)
+    ans = a * b
+    print("What is",a,"x",b)
+    userans = int(input("Answer: "))
+    if ans==userans:
+        print(">Correct.<\n")
+        score+=1
+    else:
+        print(">Incorrect.<\n")
+print("\n\nYour final score is:",str(score)+"/"+str(n))
