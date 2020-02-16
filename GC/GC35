@@ -1,0 +1,45 @@
+print(">User 1\n")
+q1a = input("What is your first question?: ")
+a1a = input("What is the answer to your first question? (all low caps): ")
+q2a = input("\nWhat is your second question?: ")
+a2a = input("What is the answer to your second question? (all low caps): ")
+print("\n\n>User 2\n")
+q1b = input("What is your first question?: ")
+a1b = input("What is the answer to your first question? (all low caps): ")
+q2b = input("\nWhat is your second question?: ")
+a2b = input("What is the answer to your second question? (all low caps): ")
+print("\n\n\n\n\n\n\n\n")
+print("This is for User 1:")
+print("What is the answer to:",q1b,"?")
+answer1a = input("Answer: ")
+score1 = 0
+if answer1a == a1b:
+    print("Correct.")
+    score1+=1
+else:
+    print("Incorrect.")
+print("What is the answer to:",q2b,"?")
+answer2a = input("Answer: ")
+if answer2a == a2b:
+    print("Correct.")
+    score1+=1
+else:
+    print("Incorrect.")
+print("\nThis is for User 2:")
+score2 = 0
+print("What is the answer to:",q1a,"?")
+answer1b = input("Answer: ")
+if answer1b == a1a:
+    print("Correct.")
+    score2+=1
+else:
+    print("Incorrect.")
+print("What is the answer to:",q2a,"?")
+answer2b = input("Answer: ")
+if answer2b == a2a:
+    print("Correct.")
+    score2+=1
+else:
+    print("Incorrect.")
+print("\nUser 1 Score:",score1)
+print("user 2 Score:",score2)
