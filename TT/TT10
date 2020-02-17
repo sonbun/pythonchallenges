@@ -1,0 +1,14 @@
+from turtle import *
+ht()
+speed(0)
+def triangle_draw(x,y,sz):
+    pu()
+    goto(x,y)
+    pd()
+    for x in range(3):
+        fd(sz)
+        lt(120)
+
+for y in range (-100,100,20):
+    for x in range (-100,100,20):
+        triangle_draw(x,y,10)
